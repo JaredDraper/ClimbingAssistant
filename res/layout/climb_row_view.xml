@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:orientation="vertical"
+    android:weightSum="100">
+    
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/typeBtn"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="10"/>
+        
+        <TextView
+            android:id="@+id/colorBtn"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="10"/>
+        
+        <TextView
+            android:id="@+id/nameBtn"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:background="@drawable/btn_background_rounded"
+            android:layout_weight="31"/>
+        
+        <TextView
+            android:id="@+id/dateBtn"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:background="@drawable/btn_background_rounded"
+            android:layout_weight="27"/>
+
+        <TextView
+            android:id="@+id/gradeBtn"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:background="@drawable/btn_background_rounded"
+            android:layout_weight="12"/>
+        
+        <TextView
+            android:id="@+id/statusBtn"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="10"
+            android:background="@drawable/btn_background_rounded" />
+
+        </LinearLayout>
+</LinearLayout>

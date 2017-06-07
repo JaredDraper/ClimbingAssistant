@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioGroup
+            android:id="@+id/radioBtnGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/gymRbtn"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/gym"
+                android:textColor="#FFFFFF" />
+
+            <RadioButton
+                android:id="@+id/cragRbtn"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/crag"
+                android:textColor="#FFFFFF" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/climbName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/location"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Spinner
+            android:id="@+id/spnLocation"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="85"
+            android:background="@drawable/rounded_corner_edit_text"
+            android:paddingRight="10dp" />
+
+        <Button
+            android:id="@+id/btnNewLocation"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="15"
+            android:paddingRight="10dp"
+            android:text="@string/plus"
+            android:background="@drawable/btn_background_rounded"
+            android:textColor="#575757" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/firstAttemptTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/area"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Spinner
+            android:id="@+id/spnArea"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="85"
+            android:background="@drawable/rounded_corner_edit_text"
+            android:paddingRight="10dp" />
+
+        <Button
+            android:id="@+id/btnNewArea"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="15"
+            android:paddingRight="10dp"
+            android:text="@string/plus"
+            android:background="@drawable/btn_background_rounded"
+            android:textColor="#575757" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="15"
+            android:text="@string/type"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_weight="15"
+            android:text="@string/color"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_weight="55"
+            android:text="@string/name"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_weight="15"
+            android:text="@string/grade"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Spinner
+            android:id="@+id/spnType"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="20"
+            android:popupBackground="@android:color/transparent"
+            tools:listitem="@android:layout/simple_spinner_item" />
+
+        <Spinner
+            android:id="@+id/spnColor"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="20"
+            android:popupBackground="@android:color/transparent"
+            tools:listitem="@android:layout/simple_spinner_item" />
+
+        <EditText
+            android:id="@+id/climbNameEdt"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="40"
+            android:background="@drawable/rounded_corner_edit_text"
+            android:hint="@string/climbName"
+            android:imeOptions="actionDone"
+            android:inputType="text|textAutoCorrect"
+            android:singleLine="true" >
+
+            <requestFocus />
+        </EditText>
+
+        <Spinner
+            android:id="@+id/spnGrade"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="20"
+            android:popupBackground="@android:color/transparent"
+            tools:listitem="@android:layout/simple_spinner_item" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="20"
+            android:text="@string/slope"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="20"
+            android:text="@string/moves"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="20"
+            android:text="@string/calories"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="20"
+            android:text="@string/status"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="20"
+            android:text="@string/injury"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Spinner
+            android:id="@+id/spnSlope"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="20"
+            android:popupBackground="@android:color/transparent"
+            tools:listitem="@android:layout/simple_spinner_item" />
+
+        <Button
+            android:id="@+id/btnMoves"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="20"
+            android:background="@drawable/btn_background_rounded"
+            android:text="@string/zero"
+            android:textColor="#575757" />
+
+        <Button
+            android:id="@+id/btnCal"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="20"
+            android:background="@drawable/btn_background_rounded"
+            android:text="@string/zero"
+            android:textColor="#575757" />
+
+        <Spinner
+            android:id="@+id/spnStatus"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="20"
+            android:popupBackground="@android:color/transparent"
+            tools:listitem="@android:layout/simple_spinner_item" />
+
+        <Spinner
+            android:id="@+id/spnInjury"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="20"
+            android:popupBackground="@android:color/transparent"
+            tools:listitem="@android:layout/simple_spinner_item" />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="11.85" >
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nothing" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="11.85"
+                android:gravity="center"
+                android:text="@string/date"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nothing" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.91"
+                android:gravity="center"
+                android:text="@string/total"
+                android:textColor="#FFFFFF" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="11.85" >
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:gravity="right"
+                android:text="@string/firstAttempt"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/firstAttemptDateBtn"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="70"
+                android:background="@drawable/btn_background_rounded"
+                android:onClick="showDatePickerDialog"
+                android:tag="firstAttemptDate"
+                android:textColor="#575757" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/attempts"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/firstAttemptTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="10"
+                android:background="@drawable/btn_background_rounded"
+                android:text="@string/zero"
+                android:textColor="#575757" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/firstSendTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="11.85" >
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:gravity="right"
+                android:text="@string/firstSend"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/sendDateBtn"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="70"
+                android:background="@drawable/btn_background_rounded"
+                android:onClick="showDatePickerDialog"
+                android:tag="sendDate"
+                android:textColor="#575757" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/sends"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/sendTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="10"
+                android:background="@drawable/btn_background_rounded"
+                android:text="@string/zero"
+                android:textColor="#575757" />
+        </TableRow>
+    </TableLayout>
+
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btnPhoto"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            
+            android:layout_weight="33"
+            android:background="@drawable/photo" />
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/comments"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="33"
+            android:ems="10"/>
+		
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|right" >
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="@style/AppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:numStars="5" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:text="@string/nothing" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="20"
+            android:background="@drawable/save"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</LinearLayout>

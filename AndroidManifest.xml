@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rubylicious.climbingtracker"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.rubylicious.climbingtracker.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity  android:name="com.rubylicious.climbingtracker.ClimbingAttributes"
+            android:label="@string/climbAttributes" >     
+        </activity>
+        <activity  android:name="com.rubylicious.climbingtracker.NewArea"
+            android:label="@string/newArea" >       
+        </activity>
+        <activity  android:name="com.rubylicious.climbingtracker.NewLocation"
+            android:label="@string/newLocation" >        
+        </activity>
+        <activity android:name="NewPhoto" android:label="@string/climbPhoto"></activity>
+        <activity android:name="LocationAdmin" android:label="@string/editLocation"></activity>
+        <activity android:name="EditLocation" android:label="@string/editLocation"></activity>
+        <activity android:name="ClimbList" android:label="Climb List"></activity>
+        <activity android:name="PinnedSectionListActivity" android:label="Climb List"></activity>
+        <activity android:name="FirstListView" android:label="Climb List"></activity>
+        <activity android:name="ClimbAttempts" android:label="Climb Attempts"></activity>
+        <activity android:name="HistoryView" android:label="History View"></activity>
+
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />    
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

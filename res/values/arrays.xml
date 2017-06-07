@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="grade">
+        <item >VB</item>
+        <item >V1</item>
+        <item >V2</item>
+        <item >V3</item>
+        <item>V4</item><item >V5</item>
+        
+    </string-array>
+    <string-array name="injury">
+        <item >ok</item>
+        <item >ow</item>
+    </string-array>
+    <string-array name="color">
+        <item >all_colors</item>
+        <item >black</item>
+        <item >brown</item>
+        <item >dark_blue</item>
+        <item >dark_green</item>
+        <item >green</item>
+        <item >hot_pink</item>
+        <item >light_blue</item>
+        <item >olive_green</item>
+        <item >orange</item>
+        <item >red</item>
+        <item >tan</item>
+        <item >yellow</item>
+    </string-array>
+    <string-array name="type">
+        <item >topRope</item>
+        <item >bouldering</item>
+        <item >sport</item>
+        <item >trad</item>
+    </string-array>
+    <string-array name="slope">
+        <item >mixed_slope</item>
+        <item >slab</item>
+        <item >vertical</item>
+        <item >overhanging</item>
+    </string-array>
+    <string-array name="status">
+        <item >project</item>
+        <item >redpoint</item>
+        <item >onsight</item>
+    </string-array>
+    <string-array name="statusDesc">
+        <item >Project</item>
+        <item >Redpoint</item>
+        <item >Onsight</item>
+    </string-array>
+    
+</resources>

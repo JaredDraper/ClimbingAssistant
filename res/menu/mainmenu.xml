@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_climbs"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:icon="@drawable/add"
+        android:title="Climbs"/>
+    <item
+        android:id="@+id/action_photos"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:icon="@drawable/gallery"
+        android:title="Locations"/>
+    <item
+        android:id="@+id/action_find"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:icon="@drawable/search"
+        android:title="Find"/>
+
+</menu> 
